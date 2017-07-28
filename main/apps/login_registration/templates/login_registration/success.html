@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <title>Login and Registration</title>
+   <meta name="Login and Registration" content="Login and Registration">
+   {% load staticfiles %}
+   <link rel="stylesheet" href="{% static 'login_registration/css/stylesheet.css' %}">
+
+</head>
+
+ <body>
+
+      {% for message in messages %}
+         <h3>{{ message }}</h3>
+      {% endfor %}
+
+   <a href="/logout"><button>Logout</button></a>
+</body>
+
+</html>
